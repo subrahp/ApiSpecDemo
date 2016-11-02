@@ -38,6 +38,7 @@ namespace ApiInstaGramTest
             var root = JsonConvert.DeserializeObject<RootObject>(ApiResponse);
             var PC = root.pincode;
             Assert.AreEqual(PC.ToString(), ExPinCode);
+            Console.Out.WriteLine("Test Completed");
         }
     }
 }
